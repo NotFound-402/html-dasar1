@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <style>
+    body {
+      background: #403a3e;
+      background: -webkit-linear-gradient(
+        to right,
+        #be5869,
+        #403a3e
+      );
+      background: linear-gradient(
+        to right,
+        #be5869,
+        #403a3e
+      );
+      background-size: cover;
+      color: white;
+    }
+    a{
+      text-decoration: none;
+    }
+    .alert {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #4caf50;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 5px;
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: 0.3s;
+    }
+
+    .alert.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+
+  <head>
+    <title>KONTAK | SSRI</title>
+  </head>
+  <body>
+    <li style="text-align: center;">
+      <a style="color: white" href="index.html">Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+      <a style="color: white" href="tentang.html">Tentang&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+      <a style="color: white" href="jurusan.html">Jurusan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+      <a style="color: white" href="kontak.html">Kontak&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+      <a style="color: white" href="ppdb.html">PPDB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    </li>
+    <hr />
+    <h1 align="center">Informasi Sekolah</h1>
+    <p align="center">Nama Sekolah: SMKN 1 Sukawati</p>
+    <p align="center">Alamat: Jl. Raya Sukawati, Gianyar, Bali</p>
+    <p align="center">Telepon: (0361) 123456</p>
+    <p align="center">Email: info@smkn1sukawati.sch.id</p>
+    <hr />
+    <h1 align="center">Form Kontak</h1>
+    <form align="center" id="formKirim">
+      <p>Nama:</p>
+      <input type="text" name="nama" placeholder="Masukkan Nama Anda" required />
+
+      <p>Email:</p>
+      <input type="email" name="email" placeholder="Masukkan Email Anda" required />
+
+      <p>Pesan:</p>
+      <textarea name="pesan" placeholder="Masukkan Pesan Anda" rows="5" cols="30" required></textarea>
+
+      <br /><br />
+      <input type="submit" value="Kirim" onclick="alert('Data berhasil terkirim!')" />
+      <input type="reset" value="Reset" />
+    </form>
+    <!-- <div id="alert" class="alert">Data berhasil terkirim!</div>
+
+    <script src="script.js"></script> -->
+    <hr />
+    <p align="center">© 2026 SMKN 1 Sukawati</p>
+  </body>
+</html>
