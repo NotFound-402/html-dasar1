@@ -1,11 +1,16 @@
 <!doctype html>
 <html>
   <style>
+    #bg{
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-attachment: fixed;
+      filter: blur(7px);
+    }
     body {
-      background: #403a3e;
-      background: -webkit-linear-gradient(to right, #be5869, #403a3e);
-      background: linear-gradient(to right, #482312, #443c41);
-      background-size: cover;
       color: white;
       font-family: Arial, sans-serif;
     }
@@ -15,8 +20,9 @@
     <title>Profil Diri | SSRI</title>
   </head>
   <body>
+    <img id="bg" src="images/ssri background.jpg">
     <h1 align="center">WELCOME TO SSRI</h1>
-    <hr />
+
     <div style="text-align: center">
       <a href="tentang.html">
         <img src="./images/logo.png" onclick="" />
