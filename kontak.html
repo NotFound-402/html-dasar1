@@ -16,7 +16,7 @@
       display: inline-block;
       color: #ffb6c1;
       background-color: rgba(237, 191, 182, 0.162);
-      border-radius: 15px;
+      border-radius: 10px;
     }
     .alert {
       position: fixed;
@@ -42,6 +42,24 @@
       width: 320px;
       line-height: 30px;
       margin: 20px auto;
+    }
+    #submit,
+    #reset {
+      background-color: rgba(128, 78, 69, 0.712);
+      color: white;
+      border: solid 2px;
+      border-radius: 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #textarea {
+      border-radius: 5px;
+    }
+    #input {
+      border-radius: 5px;
     }
   </style>
 
@@ -78,6 +96,7 @@
       <form id="formKirim">
         <p>Nama:</p>
         <input
+          id="input"
           type="text"
           name="nama"
           placeholder="Masukkan Nama Anda"
@@ -86,6 +105,7 @@
 
         <p>Email:</p>
         <input
+          id="input"
           type="email"
           name="email"
           placeholder="Masukkan Email Anda"
@@ -94,6 +114,7 @@
 
         <p>Pesan:</p>
         <textarea
+          id="textarea"
           name="pesan"
           placeholder="Masukkan Pesan Anda"
           rows="5"
@@ -102,8 +123,8 @@
         ></textarea>
 
         <br /><br />
-        <input type="submit" value="Kirim" />
-        <input type="reset" value="Reset" />
+        <input id="submit" type="submit" value="Kirim" />
+        <input id="reset" type="reset" value="Reset" />
       </form>
     </div>
 
