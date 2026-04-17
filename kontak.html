@@ -3,21 +3,20 @@
   <style>
     body {
       background: #403a3e;
-      background: -webkit-linear-gradient(
-        to right,
-        #be5869,
-        #403a3e
-      );
-      background: linear-gradient(
-        to right,
-        #be5869,
-        #403a3e
-      );
+      background: -webkit-linear-gradient(to right, #be5869, #403a3e);
+      background: linear-gradient(to right, #482312, #443c41);
       background-size: cover;
       color: white;
+      font-family: Arial, sans-serif;
     }
-    a{
+    a {
       text-decoration: none;
+      font-style: bold;
+      font-size: 20px;
+      display: inline-block;
+      color: #ffb6c1;
+      background-color: rgba(237, 191, 182, 0.162);
+      border-radius: 5px;
     }
     .alert {
       position: fixed;
@@ -36,18 +35,36 @@
       opacity: 1;
       transform: translateY(0);
     }
+    #form {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      color: white;
+      width: 320px;
+      line-height: 30px;
+      margin: 20px auto;
+    }
   </style>
 
   <head>
     <title>KONTAK | SSRI</title>
   </head>
   <body>
-    <li style="text-align: center;">
-      <a style="color: white" href="index.html">Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-      <a style="color: white" href="tentang.html">Tentang&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-      <a style="color: white" href="jurusan.html">Jurusan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-      <a style="color: white" href="kontak.html">Kontak&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-      <a style="color: white" href="ppdb.html">PPDB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <li style="text-align: center">
+      <a style="color: white" href="index.html"
+        >&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;</a
+      >
+      <a style="color: white" href="tentang.html"
+        >&nbsp;&nbsp;&nbsp;&nbsp;Tentang&nbsp;&nbsp;&nbsp;&nbsp;</a
+      >
+      <a style="color: white" href="jurusan.html"
+        >&nbsp;&nbsp;&nbsp;&nbsp;Jurusan&nbsp;&nbsp;&nbsp;&nbsp;</a
+      >
+      <a style="color: white" href="kontak.html"
+        >&nbsp;&nbsp;&nbsp;&nbsp;Kontak&nbsp;&nbsp;&nbsp;&nbsp;</a
+      >
+      <a style="color: white" href="ppdb.html"
+        >&nbsp;&nbsp;&nbsp;&nbsp;PPDB&nbsp;&nbsp;&nbsp;&nbsp;</a
+      >
     </li>
     <hr />
     <h1 align="center">Informasi Sekolah</h1>
@@ -57,20 +74,39 @@
     <p align="center">Email: info@smkn1sukawati.sch.id</p>
     <hr />
     <h1 align="center">Form Kontak</h1>
-    <form align="center" id="formKirim">
-      <p>Nama:</p>
-      <input type="text" name="nama" placeholder="Masukkan Nama Anda" required />
+    <div align="center" id="form">
+      <form id="formKirim">
+        <p>Nama:</p>
+        <input
+          type="text"
+          name="nama"
+          placeholder="Masukkan Nama Anda"
+          required
+        />
 
-      <p>Email:</p>
-      <input type="email" name="email" placeholder="Masukkan Email Anda" required />
+        <p>Email:</p>
+        <input
+          type="email"
+          name="email"
+          placeholder="Masukkan Email Anda"
+          required
+        />
 
-      <p>Pesan:</p>
-      <textarea name="pesan" placeholder="Masukkan Pesan Anda" rows="5" cols="30" required></textarea>
+        <p>Pesan:</p>
+        <textarea
+          name="pesan"
+          placeholder="Masukkan Pesan Anda"
+          rows="5"
+          cols="30"
+          required
+        ></textarea>
 
-      <br /><br />
-      <input type="submit" value="Kirim" />
-      <input type="reset" value="Reset" />
-    </form>
+        <br /><br />
+        <input type="submit" value="Kirim" />
+        <input type="reset" value="Reset" />
+      </form>
+    </div>
+
     <!-- <div id="alert" class="alert">Data berhasil terkirim!</div>
 
     <script src="script.js"></script> -->
