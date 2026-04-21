@@ -9,4 +9,4 @@ form.addEventListener("submit", function(e) {
   setTimeout(() => {
     alertBox.classList.remove("show");
   }, 5000);
-}); 
+});

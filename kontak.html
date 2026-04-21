@@ -8,8 +8,13 @@
       background-size: cover;
       color: white;
       font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
     }
-    a {
+    h1{
+      font-size: 40px;
+    }
+    /* a {
       text-decoration: none;
       font-style: bold;
       font-size: 20px;
@@ -17,6 +22,33 @@
       color: #ffb6c1;
       background-color: rgba(237, 191, 182, 0.162);
       border-radius: 10px;
+    } */
+     .sidebar {
+      width: 200px;
+      height: 118vh;
+      background: #2c2c2cd6;
+      color: white;
+      padding: 20px;
+    }
+    .sidebar img {
+      display: block;
+      margin: 0 auto 20px;
+    }
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+
+    .sidebar a:hover {
+      background: #444;
+    }
+    .content {
+      flex: 1;
+      padding: 20px;
     }
     .alert {
       position: fixed;
@@ -71,7 +103,8 @@
     <title>KONTAK | SSRI</title>
   </head>
   <body>
-    <li style="text-align: center">
+    <div class="sidebar">
+      <img src="images/logo.png" width="120px" height="120px" alt="">
       <a style="color: white" href="index.html"
         >&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;</a
       >
@@ -87,8 +120,8 @@
       <a style="color: white" href="ppdb.html"
         >&nbsp;&nbsp;&nbsp;&nbsp;PPDB&nbsp;&nbsp;&nbsp;&nbsp;</a
       >
-    </li>
-    <hr />
+    </div>
+    <div class="content">
     <h1 align="center">Informasi Sekolah</h1>
     <p align="center">Nama Sekolah: SMKN 1 Sukawati</p>
     <p align="center">Alamat: Jl. Raya Sukawati, Gianyar, Bali</p>
@@ -132,11 +165,11 @@
       </form>
       <br>
     </div>
-
-    <!-- <div id="alert" class="alert">Data berhasil terkirim!</div>
-
-    <script src="script.js"></script> -->
     <hr />
     <p align="center">© 2026 SMKN 1 Sukawati</p>
+    </div>
+    <div id="alert" class="alert">Data berhasil terkirim!</div>
+
+    <script src="script.js"></script>    
   </body>
 </html>

@@ -8,8 +8,38 @@
       background-size: cover;
       color: white;
       font-family: Arial, sans-serif;
+      display: flex;
+      margin: 0;
     }
-    #nav a {
+    .sidebar {
+      width: 200px;
+      height: 170vh;
+      background: #2c2c2cd6;
+      color: white;
+      padding: 20px;
+    }
+    .sidebar img {
+      display: block;
+      margin: 0 auto 20px;
+    }
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+
+    .sidebar a:hover {
+      background: #444;
+    }
+    .content {
+      flex: 1;
+      padding: 20px;
+      padding-bottom: 0px;
+    }
+    /* #nav a {
       text-decoration: none;
       font-style: bold;
       font-size: 20px;
@@ -17,7 +47,7 @@
       color: #ffb6c1;
       background-color: rgba(237, 191, 182, 0.162);
       border-radius: 10px;
-    }
+    } */
     button {
       background-color: rgba(128, 78, 69, 0.712);
       color: white;
@@ -25,7 +55,6 @@
       border-radius: 15px;
       text-align: center;
       text-decoration: none;
-      display: inline-block;
       font-size: 16px;
       cursor: pointer;
     }
@@ -42,7 +71,8 @@
     <title>JURUSAN | SSRI</title>
   </head>
   <body>
-    <li style="text-align: center" id="nav">
+    <div class="sidebar">
+      <img src="images/logo.png" width="120px" height="120px" alt="">
       <a style="color: white" href="index.html"
         >&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;</a
       >
@@ -58,20 +88,21 @@
       <a style="color: white" href="ppdb.html"
         >&nbsp;&nbsp;&nbsp;&nbsp;PPDB&nbsp;&nbsp;&nbsp;&nbsp;</a
       >
-    </li>
-
-    <hr />
+    </div>
+    
+    <div class="content">
     <h1>REKAYASA PERANGKAT LUNAK</h1>
     <img src="./images/RPL.png" width="236px" />
     <p>
-      RPL (Rekognisi Pembelajaran Lampau) adalah pengakuan atas capaian
-      pembelajaran seseorang yang diperoleh dari pendidikan formal, nonformal,
-      informal, atau pengalaman kerja untuk disetarakan dengan kualifikasi
-      pendidikan tinggi tertentu. Program ini memungkinkan konversi pengalaman
-      menjadi SKS (Satuan Kredit Semester), mempercepat studi, dan mendukung
-      pembelajaran sepanjang hayat.
+      Rekayasa Perangkat Lunak (RPL) adalah jurusan SMK/kuliah yang fokus
+      mempelajari pengembangan software, mulai dari coding, desain, hingga
+      algoritma untuk membuat aplikasi web, desktop, maupun mobile
     </p>
-    <a href="rpl.html"><button>&nbsp;&nbsp;&nbsp;&nbsp;Lihat Selengkapnya&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+    <a href="rpl.html"
+      ><button>
+        &nbsp;&nbsp;&nbsp;&nbsp;Lihat Selengkapnya&nbsp;&nbsp;&nbsp;&nbsp;
+      </button></a
+    >
     <h1>TEKNIK KOMPUTER JARINGAN</h1>
     <img src="./images/TKJ.png" width="236px" />
     <p>
@@ -82,7 +113,11 @@
       (Linux/Windows), keamanan jaringan, dan perangkat jaringan
       (Mikrotik/Cisco).
     </p>
-    <a href="tkj.html"><button>&nbsp;&nbsp;&nbsp;&nbsp;Lihat Selengkapnya&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+    <a href="tkj.html"
+      ><button>
+        &nbsp;&nbsp;&nbsp;&nbsp;Lihat Selengkapnya&nbsp;&nbsp;&nbsp;&nbsp;
+      </button></a
+    >
     <h1>DESAIN KOMUNIKASI VISUAL</h1>
     <img src="./images/dkv.png" width="236px" />
     <p>
@@ -93,8 +128,13 @@
       fungsional, dan estetis untuk keperluan periklanan, branding, media,
       hingga hiburan.
     </p>
-    <a href="dkv.html"><button>&nbsp;&nbsp;&nbsp;&nbsp;Lihat Selengkapnya&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+    <a href="dkv.html"
+      ><button>
+        &nbsp;&nbsp;&nbsp;&nbsp;Lihat Selengkapnya&nbsp;&nbsp;&nbsp;&nbsp;
+      </button></a
+    >
     <hr />
     <p align="center">© 2026 SMKN 1 Sukawati</p>
+    </div>
   </body>
 </html>
