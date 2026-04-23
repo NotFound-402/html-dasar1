@@ -166,3 +166,35 @@ h1 {
   padding-bottom: 0px;
   width: 40vh;
 }
+
+#toggle:checked ~ .sidebar-ppdb {
+  width: 60px;
+}
+#toggle:checked ~ .sidebar span {
+  opacity: 1;
+}
+
+.sidebar-ppdb {
+  width: 60px;
+  height: 100%;
+  background: #111;
+  color: white;
+  transition: 0.3s;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+.sidebar-ppdb a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.sidebar-ppdb span {
+  margin-left: 10px;
+  opacity: 0;
+  transition: 0.3s;
+}
