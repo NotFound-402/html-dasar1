@@ -162,6 +162,11 @@ h1 {
 
 .content-table {
   flex: 1;
-  padding: 20px;
+  padding: 10px;
   padding-bottom: 0px;
+  width: 40vh;
+}
+
+.sidebar-ppdb{
+    
 }
