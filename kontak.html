@@ -1,175 +1,71 @@
 <!doctype html>
 <html>
-  <style>
-    body {
-      background: #403a3e;
-      background: -webkit-linear-gradient(to right, #be5869, #403a3e);
-      background: linear-gradient(to right, #482312, #443c41);
-      background-size: cover;
-      color: white;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      display: flex;
-    }
-    h1{
-      font-size: 40px;
-    }
-    /* a {
-      text-decoration: none;
-      font-style: bold;
-      font-size: 20px;
-      display: inline-block;
-      color: #ffb6c1;
-      background-color: rgba(237, 191, 182, 0.162);
-      border-radius: 10px;
-    } */
-     .sidebar {
-      width: 200px;
-      height: 130vh;
-      background: #2c2c2cd6;
-      color: white;
-      padding: 20px;
-    }
-    .sidebar img {
-      display: block;
-      margin: 0 auto 20px;
-    }
-    .sidebar a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 10px;
-    }
-
-    .sidebar a:hover {
-      background: #444;
-    }
-    .content {
-      flex: 1;
-      padding: 20px;
-    }
-    .alert {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: #4caf50;
-      color: white;
-      padding: 15px 20px;
-      border-radius: 5px;
-      opacity: 0;
-      transform: translateY(-20px);
-      transition: 0.3s;
-    }
-
-    .alert.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    #form {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
-      color: white;
-      width: 320px;
-      line-height: 30px;
-      margin: 20px auto;
-    }
-    #submit,
-    #reset {
-      background-color: rgba(128, 78, 69, 0.712);
-      color: white;
-      border: solid 2px;
-      border-radius: 15px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    #textarea {
-      border-radius: 5px;
-    }
-    #input {
-      border-radius: 5px;
-    }
-    a:hover {
-      opacity: 0.8;
-      scale: 0.98;
-    }
-  </style>
-
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KONTAK | SSRI</title>
+    <link rel="stylesheet" href="./css/style2.css" />
   </head>
   <body>
+    <input type="checkbox" id="toggle" />
     <div class="sidebar">
-      <img src="images/logo.png" width="120px" height="120px" alt="">
-      <a style="color: white" href="index.html"
-        >&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;</a
-      >
-      <a style="color: white" href="tentang.html"
-        >&nbsp;&nbsp;&nbsp;&nbsp;Tentang&nbsp;&nbsp;&nbsp;&nbsp;</a
-      >
-      <a style="color: white" href="jurusan.html"
-        >&nbsp;&nbsp;&nbsp;&nbsp;Jurusan&nbsp;&nbsp;&nbsp;&nbsp;</a
-      >
-      <a style="color: white" href="kontak.html"
-        >&nbsp;&nbsp;&nbsp;&nbsp;Kontak&nbsp;&nbsp;&nbsp;&nbsp;</a
-      >
-      <a style="color: white" href="ppdb.html"
-        >&nbsp;&nbsp;&nbsp;&nbsp;PPDB&nbsp;&nbsp;&nbsp;&nbsp;</a
-      >
+      <label for="toggle" class="btn"
+        ><img src="images/logo.png" alt=""
+      /></label>
+      <a style="color: white" href="index.html"><span>Home</span></a>
+      <a style="color: white" href="tentang.html"><span>Tentang</span></a>
+      <a style="color: white" href="jurusan.html"><span>Jurusan</span></a>
+      <a style="color: white" href="kontak.html"><span>Kontak</span></a>
+      <a style="color: white" href="ppdb.html"><span>PPDB</span></a>
     </div>
-    <div class="content">
-    <h1 align="center">Informasi Sekolah</h1>
-    <p align="center">Nama Sekolah: SMKN 1 Sukawati</p>
-    <p align="center">Alamat: Jl. Raya Sukawati, Gianyar, Bali</p>
-    <p align="center">Telepon: (0361) 123456</p>
-    <p align="center">Email: info@smkn1sukawati.sch.id</p>
-    <hr />
-    <h1 align="center">Form Kontak</h1>
-    <div align="center" id="form">
-      <form id="formKirim">
-        <p>Nama:</p>
-        <input
-          id="input"
-          type="text"
-          name="nama"
-          placeholder="    Masukkan Nama Anda"
-          required
-        />
+    <div class="content-kontak">
+      <h1>Informasi Sekolah</h1>
+      <p>Nama Sekolah: SMKN 1 Sukawati</p>
+      <p>Alamat: Jl. Raya Sukawati, Gianyar, Bali</p>
+      <p>Telepon: (0361) 123456</p>
+      <p>Email: info@sm kn1sukawati.sch.id</p>
+      <hr />
+      <h1 align="center">Form Kontak</h1>
+      <div align="center" id="form">
+        <form id="formKirim">
+          <p>Nama:</p>
+          <input
+            id="input"
+            type="text"
+            name="nama"
+            placeholder="    Masukkan Nama Anda"
+            required
+          />
 
-        <p>Email:</p>
-        <input
-          id="input"
-          type="email"
-          name="email"
-          placeholder="    Masukkan Email Anda"
-          required
-        />
+          <p>Email:</p>
+          <input
+            id="input"
+            type="email"
+            name="email"
+            placeholder="    Masukkan Email Anda"
+            required
+          />
 
-        <p>Pesan:</p>
-        <textarea
-          id="textarea"
-          name="pesan"
-          placeholder="      Masukkan Pesan Anda"
-          rows="5"
-          cols="30"
-          required
-        ></textarea>
+          <p>Pesan:</p>
+          <textarea
+            id="textarea"
+            name="pesan"
+            placeholder="      Masukkan Pesan Anda"
+            rows="5"
+            cols="30"
+            required
+          ></textarea>
 
-        <br /><br />
-        <input id="submit" type="submit" value="   Kirim&nbsp&nbsp" />
-        <input id="reset" type="reset" value="  Reset&nbsp&nbsp" />
-      </form>
-      <br>
-    </div>
-    <hr />
-    <p align="center">© 2026 SMKN 1 Sukawati</p>
+          <br /><br />
+          <input id="submit" type="submit" value="   Kirim&nbsp&nbsp" />
+          <input id="reset" type="reset" value="  Reset&nbsp&nbsp" />
+        </form>
+        <br />
+      </div>
+      <hr />
+      <p align="center">© 2026 SMKN 1 Sukawati</p>
     </div>
     <div id="alert" class="alert">Data berhasil terkirim!</div>
-
-    <script src="script.js"></script>    
+    <script src="script.js"></script>
   </body>
 </html>

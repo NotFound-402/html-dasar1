@@ -1,174 +1,115 @@
 <!doctype html>
 <html>
   <style>
-    body {
-      background: #403a3e;
-      background: -webkit-linear-gradient(to right, #be5869, #403a3e);
-      background: linear-gradient(to right, #482312, #443c41);
-      background-size: cover;
-      color: white;
-      font-family: Arial, sans-serif;
-      display: flex;
-      margin: 0px;
-    }
-    h1{
-      text-align: center;
-    }
-    /* a {
-      text-decoration: none;
-      font-style: bold;
-      font-size: 20px;
-      display: inline-block;
-      color: #ffb6c1;
-      background-color: rgba(237, 191, 182, 0.162);
-      border-radius: 10px;
-    } */
-     .sidebar {
-      width: 200px;
-      height: 128vh;
-      background: #2c2c2cd6;
-      color: white;
-      padding: 20px;
-    }
-    .sidebar img {
-      display: block;
-      margin: 0 auto 20px;
-    }
-    .sidebar a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 10px;
-    }
-
-    .sidebar a:hover {
-      background: #444;
-    }
-    .content {
-      flex: 1;
-      padding: 20px;
-    }
     table {
       border-collapse: collapse;
       width: 80%;
-    }
-    a:hover {
-      opacity: 0.8;
-      scale: 0.98;
     }
   </style>
 
   <head>
     <title>TABLE | SSRI</title>
+    <link rel="stylesheet" href="/css/style2.css">
   </head>
   <body>
-    
     <!-- NAVBAR -->
+    <input type="checkbox" id="toggle" />
     <div class="sidebar">
-       <img src="images/logo.png" width="120px" height="120px" alt="">
-      <a style="color: white" href="index.html"
-        >&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;</a
-      >
-      <a style="color: white" href="tentang.html"
-        >&nbsp;&nbsp;&nbsp;&nbsp;Tentang&nbsp;&nbsp;&nbsp;&nbsp;</a
-      >
-      <a style="color: white" href="jurusan.html"
-        >&nbsp;&nbsp;&nbsp;&nbsp;Jurusan&nbsp;&nbsp;&nbsp;&nbsp;</a
-      >
-      <a style="color: white" href="kontak.html"
-        >&nbsp;&nbsp;&nbsp;&nbsp;Kontak&nbsp;&nbsp;&nbsp;&nbsp;</a
-      >
-      <a style="color: white" href="ppdb.html"
-        >&nbsp;&nbsp;&nbsp;&nbsp;PPDB&nbsp;&nbsp;&nbsp;&nbsp;</a
-      >
+      <label for="toggle" class="btn"
+        ><img src="images/logo.png" alt=""
+      /></label>
+      <a style="color: white" href="index.html"><span>Home</span></a>
+      <a style="color: white" href="tentang.html"><span>Tentang</span></a>
+      <a style="color: white" href="jurusan.html"><span>Jurusan</span></a>
+      <a style="color: white" href="kontak.html"><span>Kontak</span></a>
+      <a style="color: white" href="ppdb.html"><span>PPDB</span></a>
     </div>
     <!-- SECTION -->
-    <div class="content">
-    <h1>DATA PENERIMAAN PESERTA DIDIK BARU</h1>
-    <table border="2 solid" align="center" bordercolor="white">
-      <tr align="center">
-        <td>No</td>
-        <td>Nama</td>
-        <td>Asal Sekolah</td>
-        <td>Jurusan Pilihan</td>
-        <td>Nilai</td>
-      </tr>
-      <tr align="center">
-        <td>1</td>
-        <td>JOKO</td>
-        <td>SMPN 4 SUKAWATI</td>
-        <td>RPL</td>
-        <td>1660.0</td>
-      </tr>
-      <tr align="center">
-        <td>2</td>
-        <td>KADEK</td>
-        <td>SMPN 3 SUKAWATI</td>
-        <td>TKJ</td>
-        <td>1770.0</td>
-      </tr>
-      <tr align="center">
-        <td>3</td>
-        <td>UDIN</td>
-        <td>SMPN 2 SUKAWATI</td>
-        <td>DKV</td>
-        <td>1670.0</td>
-      </tr>
-      <tr align="center">
-        <td>4</td>
-        <td>Alex</td>
-        <td>SMPN 5 SUKAWATI</td>
-        <td>RPL</td>
-        <td>1770.0</td>
-      </tr>
-      <tr align="center">
-        <td>5</td>
-        <td>NenoMorgann</td>
-        <td>SMPN 4 SUKAWATI</td>
-        <td>TKJ</td>
-        <td>1590.0</td>
-      </tr>
-      <tr align="center">
-        <td>6</td>
-        <td>Lanang Darmawan</td>
-        <td>SMPN 6 SUKAWATI</td>
-        <td>RPL</td>
-        <td>1900.0</td>
-      </tr>
-      <tr align="center">
-        <td>7</td>
-        <td>Bulexx</td>
-        <td>SMPN 3 SUKAWATI</td>
-        <td>TKJ</td>
-        <td>1880.0</td>
-      </tr>
-      <tr align="center">
-        <td>8</td>
-        <td>DikaMorgan</td>
-        <td>SMPN 4 SUKAWATI</td>
-        <td>TKJ</td>
-        <td>1790.0</td>
-      </tr>
-      <tr align="center">
-        <td>9</td>
-        <td>Ridho</td>
-        <td>SMPN 4 SUKAWATI</td>
-        <td>DKV</td>
-        <td>1660.0</td>
-      </tr>
-      <tr align="center">
-        <td>10</td>
-        <td>Jro Jepang</td>
-        <td>SMPN 5 SUKAWATI</td>
-        <td>RPL</td>
-        <td>1630.0</td>
-      </tr>
-    </table>
-    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    <hr />
-    <p align="center">© 2026 SMKN 1 Sukawati</p>
+    
+    <div class="content-table">
+      <h1>DATA PENERIMAAN PESERTA DIDIK BARU</h1>
+      <table border="2 solid" align="center" bordercolor="white">
+        <tr align="center">
+          <td>No</td>
+          <td>Nama</td>
+          <td>Asal Sekolah</td>
+          <td>Jurusan Pilihan</td>
+          <td>Nilai</td>
+        </tr>
+        <tr align="center">
+          <td>1</td>
+          <td>JOKO</td>
+          <td>SMPN 4 SUKAWATI</td>
+          <td>RPL</td>
+          <td>1660.0</td>
+        </tr>
+        <tr align="center">
+          <td>2</td>
+          <td>KADEK</td>
+          <td>SMPN 3 SUKAWATI</td>
+          <td>TKJ</td>
+          <td>1770.0</td>
+        </tr>
+        <tr align="center">
+          <td>3</td>
+          <td>UDIN</td>
+          <td>SMPN 2 SUKAWATI</td>
+          <td>DKV</td>
+          <td>1670.0</td>
+        </tr>
+        <tr align="center">
+          <td>4</td>
+          <td>Alex</td>
+          <td>SMPN 5 SUKAWATI</td>
+          <td>RPL</td>
+          <td>1770.0</td>
+        </tr>
+        <tr align="center">
+          <td>5</td>
+          <td>NenoMorgann</td>
+          <td>SMPN 4 SUKAWATI</td>
+          <td>TKJ</td>
+          <td>1590.0</td>
+        </tr>
+        <tr align="center">
+          <td>6</td>
+          <td>Lanang Darmawan</td>
+          <td>SMPN 6 SUKAWATI</td>
+          <td>RPL</td>
+          <td>1900.0</td>
+        </tr>
+        <tr align="center">
+          <td>7</td>
+          <td>Bulexx</td>
+          <td>SMPN 3 SUKAWATI</td>
+          <td>TKJ</td>
+          <td>1880.0</td>
+        </tr>
+        <tr align="center">
+          <td>8</td>
+          <td>DikaMorgan</td>
+          <td>SMPN 4 SUKAWATI</td>
+          <td>TKJ</td>
+          <td>1790.0</td>
+        </tr>
+        <tr align="center">
+          <td>9</td>
+          <td>Ridho</td>
+          <td>SMPN 4 SUKAWATI</td>
+          <td>DKV</td>
+          <td>1660.0</td>
+        </tr>
+        <tr align="center">
+          <td>10</td>
+          <td>Jro Jepang</td>
+          <td>SMPN 5 SUKAWATI</td>
+          <td>RPL</td>
+          <td>1630.0</td>
+        </tr>
+      </table>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <hr />
+      <p align="center">© 2026 SMKN 1 Sukawati</p>
     </div>
   </body>
 </html>

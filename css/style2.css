@@ -1,0 +1,167 @@
+html,
+body {
+  background: #403a3e;
+  background: -webkit-linear-gradient(to right, #be5869, #403a3e);
+  background: linear-gradient(to right, #482312, #443c41);
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+}
+#toggle {
+  display: none;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+}
+.btn img {
+  transition: 0.3s;
+}
+.btn:active img {
+  transform: scale(0.9);
+}
+.btn:hover {
+  background: #222;
+  border-radius: 10px;
+}
+#toggle:checked ~ .sidebar {
+  width: 200px;
+}
+#toggle:checked ~ .sidebar span {
+  opacity: 1;
+}
+.sidebar {
+  width: 60px;
+  height: 100%;
+  background: #111;
+  color: white;
+  transition: 0.3s;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+img {
+  display: block;
+  margin: 10px auto 20px;
+  width: 70px;
+  height: 70px;
+}
+.sidebar a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.sidebar span {
+  margin-left: 10px;
+  opacity: 0;
+  transition: 0.3s;
+}
+a:hover {
+  opacity: 0.8;
+  scale: 0.98;
+  background: #444;
+}
+.content {
+  flex: 1;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+hr {
+  margin-top: 150px;
+}
+.content img {
+  border-radius: 10px;
+  width: 236px;
+  height: 236px;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.content button {
+  border-radius: 10px;
+  width: 150px;
+  height: 30px;
+}
+
+.content button:hover {
+  background-color: #443c41;
+  color: white;
+  opacity: 0.8;
+  scale: 0.98;
+  transition: 0.3s;
+}
+
+.alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #4caf50;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: 0.3s;
+}
+
+.alert.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+#form {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: white;
+  width: 320px;
+  line-height: 30px;
+  margin: 20px auto;
+}
+#submit,
+#reset {
+  background-color: rgba(128, 78, 69, 0.712);
+  color: white;
+  border: solid 2px;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+#textarea {
+  border-radius: 5px;
+}
+#input {
+  border-radius: 5px;
+}
+
+.content h1 {
+  text-align: start;
+}
+
+.content-kontak {
+  flex: 1;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.content-kontak p,
+h1 {
+  text-align: center;
+}
+
+.content-table {
+  flex: 1;
+  padding: 20px;
+  padding-bottom: 0px;
+}
